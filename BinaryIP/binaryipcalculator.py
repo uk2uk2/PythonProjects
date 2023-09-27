@@ -1,3 +1,5 @@
+
+
 def to_binary(octet):
     """
     Convert an IP address octet to binary.
@@ -22,3 +24,11 @@ def ip_to_binary (ip_address):
     octets = ip_address.split('.')
     binary_ip = '.'.join(to_binary(int(octect)) for octect in octets)
     return binary_ip
+
+
+x = input("Input your IP: ")
+
+
+y = ip_to_binary(x)
+
+print("This is your Binary conversion: " + y)
